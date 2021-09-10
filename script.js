@@ -17,7 +17,6 @@ function generatePassword() {
   var upperConf = confirm("Would you like your password to include uppercase characters?");
   var specCharConf = confirm("Would you like your password to include special characters?");
   var numberConf = confirm("Would you like your password to include numbers?");
-
   // while instead of if because while will continuosly run as long as the condition is not met
   while (lowerConf === false && upperConf === false && specCharConf === false && numberConf === false) {
     alert("You must choose at least one character to be in your password.");
@@ -27,7 +26,6 @@ function generatePassword() {
     var specCharConf = confirm("Would you like your password to include special characters?");
     var numberConf = confirm("Would you like your password to include numbers?");
   }
-
 
 // var is empty
 var passwordCombo = []
@@ -47,18 +45,9 @@ if (numberConf = true) {
   var passwordCombo = passwordCombo.concat(numberChar);
 }
 
-
-
-// testing code in console
-console.log(passwordCombo);
-console.log(passwordCombo.length);
-console.log(Math.random() * passwordCombo.length);
-console.log(Math.floor(Math.random() * passwordCombo.length));
-console.log(passwordCombo[Math.floor(Math.random() * passwordCombo.length)]);
-
-
+// empty password string 
 var password = ""
-
+// addition assignment adds chosen random characters together lengthConf amount of times 
 for (var i = 0; i < lengthConf; i++) {
 password = password += passwordCombo[Math.floor(Math.random() * passwordCombo.length)];
 }
@@ -71,7 +60,6 @@ return password
   passwordText.value = password;
 }
 
-writePassword();
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 

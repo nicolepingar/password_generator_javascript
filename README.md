@@ -10,7 +10,7 @@ Here is a link to the password generator: https://nicolepingar.github.io/passwor
 
 Below is a picture of the application:
 
-!["Picture of Website"](Images/capture_pw_generator.jpg)
+!["Picture of Password Generator"](Images/capture_pw_generator.JPG)
 
 ## How to Contribute
 Please find me on GitHub @nicolepingar or email me at nicolepingar@gmail.com.
